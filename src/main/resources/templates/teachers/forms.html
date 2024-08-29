@@ -37,7 +37,6 @@
                     <option value="Philosophie">Philosophie</option>
                     <option value="Français">Français</option>
                 </select>
-                <input type="date" th:field="*{dateDeNaissance}" id="dateNaissance" placeholder="dd/MM/YYYY" required>
             </div>
             <div class="form-row">
                     <div class="radio-group">
@@ -48,6 +47,14 @@
             <div class="form-row">
                 <input type="tel" th:field="*{telephone}" id="telephone" placeholder="Téléphone">
                 <input type="text" th:field="*{ville}" id="ville" placeholder="Ville">
+            </div>
+            <div class="form-row">
+                <input type="date" th:field="*{dateDeNaissance}" id="dateNaissance" placeholder="dd/MM/YYYY" required>
+                <input type="text" th:field="*{address.city}" id="city" placeholder="City">
+            </div>
+            <div class="form-row">
+                <input type="text" th:field="*{address.country}" id="country" placeholder="Country">
+                <input type="text" th:field="*{address.street}" id="street" placeholder="Street">
             </div>
             <div class="form-row buttons">
                 <button type="button" class="btn-cancel">Annuler</button>

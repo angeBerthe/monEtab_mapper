@@ -2,6 +2,7 @@ package ci.digitalacademy.monetab;
 
 import ci.digitalacademy.monetab.models.*;
 import ci.digitalacademy.monetab.services.*;
+import ci.digitalacademy.monetab.services.dto.UserDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -110,22 +111,16 @@ public class MonetabApplication implements CommandLineRunner {
         //Enregistrement de l'utilisateur
 
 /*
-        User user = new User();
+        UserDTO userDTO = new UserDTO();
 
-        user.setPseudo("angeB");
-        user.setPassword("angeB123");
-        user.setCreationDate(Instant.now());
+        userDTO.setPseudo("angeB");
+        userDTO.setPassword("angeB123");
+        userDTO.setCreationDate(Instant.now());
 
-        User user1 = new User();
-
-        user1.setPseudo("angeS");
-        user1.setPassword("angeS123");
-        user1.setCreationDate(Instant.now());
-
-        userService.save(user);
-        userService.save(user1);
-
+        userService.save(userDTO);
 */
+
+
     }
 
 }

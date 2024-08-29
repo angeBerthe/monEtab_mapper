@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Getter
@@ -41,5 +42,8 @@ public abstract class Person {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(name = "dateDeNaissance", nullable = false)
     private Date dateDeNaissance;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Address address;
 
 }

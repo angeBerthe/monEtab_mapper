@@ -40,11 +40,18 @@
                     <option value="5eme">5ème</option>
                     <option value="6eme">6ème</option>
                 </select>
-                <input type="text" id="email"  th:field="*{email}" placeholder="Email" required>
             </div>
             <div class="form-row">
                 <input type="tel" th:field="*{telephone}" id="telephone" placeholder="Téléphone">
                 <input type="text" th:field="*{ville}" id="ville" placeholder="Ville">
+            </div>
+            <div class="form-row">
+                <input type="text" id="email"  th:field="*{email}" placeholder="Email" required>
+                <input type="text" th:field="*{address.city}" id="city" placeholder="City">
+            </div>
+            <div class="form-row">
+                <input type="text" th:field="*{address.country}" id="country" placeholder="Country">
+                <input type="text" th:field="*{address.street}" id="street" placeholder="Street">
             </div>
             <div class="form-row buttons">
                 <button type="button" class="btn-cancel">Annuler</button>
